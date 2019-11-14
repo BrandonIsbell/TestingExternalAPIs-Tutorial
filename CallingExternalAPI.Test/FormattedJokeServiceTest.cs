@@ -15,7 +15,7 @@ namespace CallingExternalAPI.Test
         public void Setup()
         {
             mockExternalApiService = new Mock<IExternalAPIService>();
-            jokeWithQuotes = new Joke { Value = new JokeContents { Joke = "&quotThis is a test&quot" } };
+            jokeWithQuotes = new Joke { Value = new JokeContents { Joke = "&quot;This is a test&quot;" } };
         }
 
         [Test]

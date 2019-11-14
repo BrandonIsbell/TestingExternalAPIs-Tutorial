@@ -16,7 +16,7 @@ namespace CallingExternalAPI.Services
         public async Task<string> GetFormattedJokeAsync()
         {
             var joke = await _externalAPIService.GetJokeAsync();
-            return joke.Value.Joke.Replace("&quot","\"");
+            return joke.Value.Joke.Replace("&quot;","\"");
         }
     }
 }
